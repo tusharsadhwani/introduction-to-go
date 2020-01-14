@@ -16,6 +16,6 @@ func main() {
 
 	greet := func() {
 		fmt.Println("Hello Techies!")
-	} // Inline Function
+	} // Inline / Anonymous Function
 	greet()
 }
