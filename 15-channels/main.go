@@ -23,7 +23,7 @@ func main() {
 	nums <- 7
 	nums <- 13
 
-	fmt.Println(<-out)
+	fmt.Println(<-out) // BLOCKING CALL
 	fmt.Println(<-out)
 	fmt.Println(<-out)
 }
