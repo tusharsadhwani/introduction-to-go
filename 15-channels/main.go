@@ -10,6 +10,7 @@ func squared(in chan int) chan int {
 	go func() {
 		for i := range in {
 			out <- i * i
+			time.Sleep(time.Second)
 		}
 	}()
 	return out
@@ -23,8 +24,6 @@ func main() {
 	nums <- 13
 
 	fmt.Println(<-out)
-	time.Sleep(time.Second)
 	fmt.Println(<-out)
-	time.Sleep(time.Second)
 	fmt.Println(<-out)
 }
