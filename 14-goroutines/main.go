@@ -17,7 +17,7 @@ func main() {
 	go f("goroutine")
 
 	go func(msg string) {
-		time.Sleep(time.Millisecond * 500)
+		time.Sleep(time.Millisecond * 600)
 		fmt.Println(msg)
 	}("another goroutine")
 
